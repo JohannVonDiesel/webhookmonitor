@@ -1,6 +1,6 @@
-## What is this mess?
+## What is it?
 
-WIP!  demo webhook monitor that generates an event when a POST request is received, it generates a response and also loggs the events for further data injestion.  
+WIP!  demo web-hook monitor that generates an event when a POST request is received, it generates a response and also logs the events for further data ingestion.  
 It is intended to be used as a basis for building a more robust monitoring scheme for applications or services that generate webhook events.  
   
 This deploys as a GCP Cloud Function.  
