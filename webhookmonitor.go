@@ -15,9 +15,10 @@ func InboundWebhook(w http.ResponseWriter, r *http.Request) {
 
 	//-- throw err if JSON is shitty
 	if !boolJSONParse {
-		throwError("Unable to parse JSON response", w)
+		throwJSONError(w, nil, http.StatusBadRequest)
 		return
 	}
+
 	//-- feel the joy
 	w.Write([]byte("Success parsing incoming webhook JSON"))
 }
